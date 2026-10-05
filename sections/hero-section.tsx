@@ -49,7 +49,7 @@ export default function HeroSection() {
                 Web Developer
             </p>
             <ul className="flex flex-col sm:flex-row justify-center items-center gap-x-3 gap-y-1 mt-5 text-gray-500 dark:text-gray-400">
-                {["10+ years experience", "20+ live sites", "WordPress / Shopify / Next.js"].map((stat, index) => (
+                {["10+ years experience", "20+ live sites", "WordPress / Shopify / Next.js / Webflow"].map((stat, index) => (
                     <li key={stat} className="flex items-center gap-3">
                         {index > 0 && <span className="max-sm:hidden text-gray-300 dark:text-gray-700">·</span>}
                         {stat}
