@@ -8,7 +8,7 @@ export default function LenisScroll() {
         const lenis = new Lenis({
             duration: 1.2,
             smoothWheel: true,
-            anchors: true,
+            anchors: { offset: -80 },
         });
 
         const raf = (time: number) => {

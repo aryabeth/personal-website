@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Poppins, Sorts_Mill_Goudy } from "next/font/google";
 import "./globals.css";
 import LenisScroll from "@/components/lenis";
+import { site } from "@/lib/site";
+import { Analytics } from "@vercel/analytics/next";
 
 const poppins = Poppins({
     variable: "--font-sans",
@@ -16,8 +18,25 @@ const sortsMillGoudy = Sorts_Mill_Goudy({
 });
 
 export const metadata: Metadata = {
-    title: "Arya Beta Widyatmika - Web Developer",
-    description: "Bali-based web developer with ten years of experience in WordPress, Shopify, Next.js and full-stack PHP.",
+    metadataBase: new URL(site.url),
+    title: site.title,
+    description: site.description,
+    keywords: ["web developer", "WordPress developer", "Shopify developer", "Next.js developer", "Bali", "Indonesia"],
+    authors: [{ name: site.name, url: site.url }],
+    alternates: { canonical: "/" },
+    openGraph: {
+        type: "website",
+        url: "/",
+        siteName: site.name,
+        title: site.title,
+        description: site.description,
+        locale: "en_US",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: site.title,
+        description: site.description,
+    },
 };
 
 export default function RootLayout({
@@ -30,6 +49,7 @@ export default function RootLayout({
             <body>
                 <LenisScroll />
                 {children}
+                <Analytics />
             </body>
         </html>
     );

@@ -215,7 +215,7 @@ const MarqueeItem = () => (
     <span>WordPress</span> <span className="text-primary/60">✦</span>
     <span>Shopify</span> <span className="text-secondary/60">✦</span>
     <span>Web Developer</span> <span className="text-primary/60">✦</span>
-    <span>Open To Work</span> <span className="text-secondary/60">✦</span>
+    <span>Available For Freelance</span> <span className="text-secondary/60">✦</span>
     <span>Based In Bali</span> <span className="text-primary/60">✦</span>
   </div>
 );

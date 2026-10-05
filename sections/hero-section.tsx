@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
     return (
-        <main className="flex flex-col items-center pt-32 max-md:px-4">
+        <main id="top" className="flex flex-col items-center pt-32 max-md:px-4">
             <svg className="absolute -z-10 -mt-20 right-0" width="890" height="764" viewBox="0 0 890 764" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path stroke="#e2e8f0" d="M.5.5h63.825v63.825H.5zm0 380.85h63.825v63.825H.5zM444.824.5h63.825v63.825h-63.825zm0 380.85h63.825v63.825h-63.825zM.5 190.924h63.825v63.825H.5zm0 380.849h63.825v63.825H.5zm444.324-380.849h63.825v63.825h-63.825zm0 380.849h63.825v63.825h-63.825z" />
                 <path stroke="#e2e8f0" d="M.5 63.975h63.825V127.8H.5zm0 380.849h63.825v63.825H.5zM444.824 63.975h63.825V127.8h-63.825zm0 380.849h63.825v63.825h-63.825zM.5 254.4h63.825v63.825H.5zm0 380.85h63.825v63.825H.5zM444.824 254.4h63.825v63.825h-63.825zm0 380.85h63.825v63.825h-63.825z" />
@@ -47,6 +47,14 @@ export default function HeroSection() {
             <p className="text-2xl md:text-3xl font-mono mt-6">
                 Web Developer
             </p>
+            <ul className="flex flex-col sm:flex-row justify-center items-center gap-x-3 gap-y-1 mt-5 text-gray-500">
+                {["10+ years experience", "20+ live sites", "WordPress / Shopify / Next.js"].map((stat, index) => (
+                    <li key={stat} className="flex items-center gap-3">
+                        {index > 0 && <span className="max-sm:hidden text-gray-300">·</span>}
+                        {stat}
+                    </li>
+                ))}
+            </ul>
             <div className="mt-6">
                 <a href="/resume.pdf" target="_blank" className="group bg-indigo-600 hover:bg-indigo-700 text-white px-7 py-2.5 rounded-lg">
                     Resume

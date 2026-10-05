@@ -1,5 +1,6 @@
 import { CinematicFooter } from "@/components/ui/motion-footer";
 import AboutSection from "@/sections/about-section";
+import SiteHeader from "@/components/site-header";
 import ContactSection from "@/sections/contact-section";
 import EducationSection from "@/sections/education-section";
 import ExperienceSection from "@/sections/experience-section";
@@ -10,6 +11,7 @@ import SkillsSection from "@/sections/skills-section";
 export default function Page() {
     return (
         <>
+            <SiteHeader />
             <main className="max-md:px-4">
                 <HeroSection />
                 <AboutSection />
