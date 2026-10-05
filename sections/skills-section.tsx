@@ -5,9 +5,13 @@ export default function SkillsSection() {
         "WordPress",
         "Shopify",
         "Next.js",
+        "Webflow",
+        "Tailwind",
+        "Payload",
         "HTML",
         "CSS",
         "JavaScript",
+        "TypeScript",
         "PHP",
         "CodeIgniter",
         "MySQL",
@@ -16,7 +20,6 @@ export default function SkillsSection() {
         "Performance optimisation",
         "SEO",
         "Git",
-        "Technical documentation",
     ];
 
     return (

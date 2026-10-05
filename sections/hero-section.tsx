@@ -41,7 +41,7 @@ export default function HeroSection() {
                 height={144}
             />
 
-            <h2 className="text-4xl md:text-6xl font-semibold mt-6">
+            <h2 className="text-4xl text-center md:text-6xl font-semibold mt-6">
                 Arya Beta Widyatmika
             </h2>
             <p className="text-2xl md:text-3xl font-mono mt-6">
