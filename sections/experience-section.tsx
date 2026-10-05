@@ -45,14 +45,14 @@ export default function ExperienceSection() {
         <Section title="Experience">
             <div className="space-y-6 w-full">
                 {experience.map((experience) => (
-                    <div key={experience.title} className="w-full border border-gray-200 p-6 rounded-xl">
-                        <div className="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500">
+                    <div key={experience.title} className="w-full border border-gray-200 p-6 rounded-xl dark:border-gray-800">
+                        <div className="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500 dark:text-gray-400">
                             <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
-                                <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
-                                    <BriefcaseIcon className="size-5.5 text-gray-600" />
+                                <div className="bg-gray-50 border border-gray-200 rounded-lg p-3 dark:bg-gray-900 dark:border-gray-800">
+                                    <BriefcaseIcon className="size-5.5 text-gray-600 dark:text-gray-300" />
                                 </div>
                                 <div>
-                                    <h3 className="text-base font-medium text-gray-800">
+                                    <h3 className="text-base font-medium text-gray-800 dark:text-gray-100">
                                         {experience.title}
                                     </h3>
                                     <div>{experience.company} · {experience.location}</div>
@@ -60,7 +60,7 @@ export default function ExperienceSection() {
                             </div>
                             <div className="shrink-0">{experience.start} - {experience.end}</div>
                         </div>
-                        <ul className="list-disc px-5 mt-6 text-gray-500 space-y-2">
+                        <ul className="list-disc px-5 mt-6 text-gray-500 space-y-2 dark:text-gray-400">
                             {experience.description.map((description) => (
                                 <li key={description}>{description}</li>
                             ))}

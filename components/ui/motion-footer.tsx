@@ -109,7 +109,7 @@ const STYLES = `
 
 /* Giant Background Text Masking */
 .footer-giant-bg-text {
-  font-size: 26vw;
+  font-size: 15vw;
   line-height: 0.75;
   font-weight: 900;
   letter-spacing: -0.05em;
@@ -214,6 +214,7 @@ const MarqueeItem = () => (
   <div className="flex items-center space-x-12 px-6">
     <span>WordPress</span> <span className="text-primary/60">✦</span>
     <span>Shopify</span> <span className="text-secondary/60">✦</span>
+    <span>Webflow</span> <span className="text-primary/60">✦</span>
     <span>Web Developer</span> <span className="text-primary/60">✦</span>
     <span>Available For Freelance</span> <span className="text-secondary/60">✦</span>
     <span>Based In Bali</span> <span className="text-primary/60">✦</span>
@@ -302,7 +303,7 @@ export function CinematicFooter() {
             ref={giantTextRef}
             className="footer-giant-bg-text absolute -bottom-[5vh] left-1/2 -translate-x-1/2 whitespace-nowrap z-0 pointer-events-none select-none"
           >
-            A R Y A
+            A R Y A B E T H
           </div>
 
           {/* 1. Diagonal Sleek Marquee (Top of footer) */}

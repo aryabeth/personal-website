@@ -22,20 +22,20 @@ export default function EducationSection() {
         <Section title="Education">
             <div className="space-y-6 w-full">
                 {education.map((item) => (
-                    <div key={item.school} className="w-full border border-gray-200 p-6 rounded-xl">
-                        <div className="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500">
+                    <div key={item.school} className="w-full border border-gray-200 p-6 rounded-xl dark:border-gray-800">
+                        <div className="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500 dark:text-gray-400">
                             <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
-                                <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                                <div className="bg-gray-50 border border-gray-200 rounded-lg p-3 dark:bg-gray-900 dark:border-gray-800">
                                     <Image
                                         src="/assets/education-image-1.png"
                                         alt="Education"
                                         width={25}
                                         height={25}
-                                        className="size-5.5"
+                                        className="size-5.5 dark:brightness-0 dark:invert"
                                     />
                                 </div>
                                 <div>
-                                    <h3 className="text-base font-medium text-gray-800">
+                                    <h3 className="text-base font-medium text-gray-800 dark:text-gray-100">
                                         {item.degree}
                                     </h3>
                                     <div>{item.school}</div>
@@ -44,7 +44,7 @@ export default function EducationSection() {
                             <div className="shrink-0">{item.start} - {item.end}</div>
                         </div>
                         {item.description && (
-                            <p className="mt-6 text-gray-500">{item.description}</p>
+                            <p className="mt-6 text-gray-500 dark:text-gray-400">{item.description}</p>
                         )}
                     </div>
                 ))}

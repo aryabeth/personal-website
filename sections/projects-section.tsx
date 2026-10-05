@@ -24,11 +24,11 @@ export default function ProjectsSection() {
         <Section title="Projects">
             <div className="grid sm:grid-cols-2 gap-4 w-full">
                 {projects.map((project) => (
-                    <div key={project.title} className="hover:-translate-y-0.5 transition duration-300 border border-gray-200 rounded-xl p-5">
+                    <div key={project.title} className="hover:-translate-y-0.5 transition duration-300 border border-gray-200 rounded-xl p-5 dark:border-gray-800">
                         <h3 className="text-base font-medium">
                             {project.title}
                         </h3>
-                        <p className="text-gray-500 mt-1">
+                        <p className="text-gray-500 mt-1 dark:text-gray-400">
                             {project.description}
                         </p>
                     </div>

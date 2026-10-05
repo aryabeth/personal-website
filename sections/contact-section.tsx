@@ -15,9 +15,9 @@ export default function ContactSection() {
                     {contacts.map((contact) => (
                         <tr key={contact.label}>
                             <td className="pr-4 py-2">{contact.label}:</td>
-                            <td className="py-2 text-gray-500">
+                            <td className="py-2 text-gray-500 dark:text-gray-400">
                                 {contact.href ? (
-                                    <a href={contact.href} target="_blank" className="hover:text-gray-800 transition">
+                                    <a href={contact.href} target="_blank" className="hover:text-gray-800 transition dark:hover:text-gray-100">
                                         {contact.value}
                                     </a>
                                 ) : (
