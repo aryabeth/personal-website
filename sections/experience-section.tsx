@@ -1,57 +1,64 @@
 import Section from "@/components/section";
-import Image from "next/image";
+import { BriefcaseIcon } from "lucide-react";
 
 export default function ExperienceSection() {
     const experience = [
         {
-            image: "/assets/google.svg",
-            title: "Sr. Software engineer",
-            company: "Google",
-            location: "New York",
-            start: "Jan 2024",
+            title: "Web Developer",
+            company: "Kesato & Co Digital Agency",
+            location: "Bali",
+            start: "2020",
             end: "Present",
             description: [
-                "Lead end-to-end development of large-scale, high-performance systems used by millions of users.",
-                "Mentor junior engineers, conduct code reviews, and uphold engineering best practices.",
+                "Build and launch client websites using WordPress, Shopify and Next.js.",
+                "Convert Figma and Adobe XD designs into pixel-accurate, responsive front-ends.",
+                "Maintain and optimise live client sites, improving page speed and uptime.",
             ],
         },
         {
-            image: "/assets/microsoft.svg",
-            title: "Full Stack developer",
-            company: "Microsoft",
-            location: "London",
-            start: "May 2021",
-            end: "Dec 2024",
+            title: "Head of IT Division & Web Developer",
+            company: "Total Bali & Api Pacific",
+            location: "Bali",
+            start: "2016",
+            end: "2020",
             description: [
-                "Full-stack development of large-scale, high-performance systems used by millions of users.",
-                "Mentor junior engineers, conduct code reviews, and uphold engineering best practices.",
+                "Led development and maintenance of a portfolio of 20+ company websites across villa rental, insurance and retail.",
+                "Managed the full stack for each site, from hosting and deployment through to front-end updates.",
+                "Oversaw office network and internet infrastructure.",
+            ],
+        },
+        {
+            title: "Freelance Web Developer",
+            company: "Self-employed",
+            location: "Yogyakarta",
+            start: "2015",
+            end: "2016",
+            description: [
+                "Built a hospital management information system (SIMRS) for Datu Rantau Hospital using CodeIgniter.",
+                "Developed a futsal court booking platform as full-stack developer.",
+                "Built the online voting system for the FTI & BEMU UKDW student elections.",
             ],
         },
     ];
 
     return (
         <Section title="Experience">
-            <div className="space-y-6">
+            <div className="space-y-6 w-full">
                 {experience.map((experience) => (
                     <div key={experience.title} className="w-full border border-gray-200 p-6 rounded-xl">
                         <div className="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500">
                             <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
                                 <div className="bg-gray-50 border border-gray-200 rounded-lg p-3">
-                                    <Image
-                                        src={experience.image}
-                                        alt={experience.title}
-                                        width={25}
-                                        height={25}
-                                    />
+                                    <BriefcaseIcon className="size-5.5 text-gray-600" />
                                 </div>
                                 <div>
                                     <h3 className="text-base font-medium text-gray-800">
                                         {experience.title}
                                     </h3>
-                                    <div>{experience.company}</div>
+                                    <div>{experience.company} · {experience.location}</div>
                                 </div>
                             </div>
-                            <div>{experience.start} - {experience.end}</div>
+                            <div className="shrink-0">{experience.start} - {experience.end}</div>
                         </div>
                         <ul className="list-disc px-5 mt-6 text-gray-500 space-y-2">
                             {experience.description.map((description) => (

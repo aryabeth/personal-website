@@ -2,17 +2,21 @@ import Section from "@/components/section";
 
 export default function SkillsSection() {
     const skills = [
-        "React.js",
+        "WordPress",
+        "Shopify",
         "Next.js",
-        "Tailwind CSS",
-        "TypeScript",
-        "Node.js",
-        "PostgreSQL",
-        "MySQL",
-        "Git",
         "HTML",
         "CSS",
         "JavaScript",
+        "PHP",
+        "CodeIgniter",
+        "MySQL",
+        "Figma",
+        "Adobe XD",
+        "Performance optimisation",
+        "SEO",
+        "Git",
+        "Technical documentation",
     ];
 
     return (

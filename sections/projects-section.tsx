@@ -1,40 +1,36 @@
 import Section from "@/components/section";
-import Image from "next/image";
 
 export default function ProjectsSection() {
     const projects = [
         {
-            title: "Marketplace",
-            description: "E-commerce web app",
-            image: "/assets/project-1.png",
+            title: "Hospital Management System (SIMRS)",
+            description: "Hospital management information system for Datu Rantau Hospital, built with CodeIgniter.",
         },
         {
-            title: "Navigator",
-            description: "Navigation app design",
-            image: "/assets/project-2.png",
+            title: "Futsal Court Booking",
+            description: "Full-stack booking platform for futsal courts.",
+        },
+        {
+            title: "UKDW Online Voting",
+            description: "Online voting system for the FTI & BEMU UKDW student elections.",
+        },
+        {
+            title: "Course Recommendation System",
+            description: "Thesis project using genetic algorithms and constraint satisfaction (CodeIgniter, JavaScript).",
         },
     ];
 
     return (
         <Section title="Projects">
-            <div className="flex flex-wrap justify-center items-center gap-4 mr-auto">
+            <div className="grid sm:grid-cols-2 gap-4 w-full">
                 {projects.map((project) => (
-                    <div key={project.title} className="hover:-translate-y-0.5 transition duration-300 max-w-75 border border-gray-200 rounded-xl">
-                        <Image
-                            className="rounded-t-xl h-42 object-fit"
-                            src={project.image}
-                            alt={project.title}
-                            width={300}
-                            height={170}
-                        />
-                        <div className="p-4">
-                            <h3 className="text-base font-medium">
-                                {project.title}
-                            </h3>
-                            <p className="text-gray-500 mt-1">
-                                {project.description}
-                            </p>
-                        </div>
+                    <div key={project.title} className="hover:-translate-y-0.5 transition duration-300 border border-gray-200 rounded-xl p-5">
+                        <h3 className="text-base font-medium">
+                            {project.title}
+                        </h3>
+                        <p className="text-gray-500 mt-1">
+                            {project.description}
+                        </p>
                     </div>
                 ))}
             </div>

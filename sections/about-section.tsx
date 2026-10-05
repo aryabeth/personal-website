@@ -5,10 +5,10 @@ export default function AboutSection() {
         <Section title="About">
             <div className="text-sm/6.5">
                 <p>
-                    I’m Rayan Walker, a full-stack developer passionate about building end-to-end digital experiences that are fast, scalable and user-focused. With strong expertise in both front-end and back-end technologies, I enjoy transforming ideas into fully functional web applications that feel seamless and intuitive.
+                    I’m Arya Beta Widyatmika, a web developer based in Bali with ten years of experience delivering and maintaining production websites for digital agencies and in-house teams. I specialise in WordPress, with hands-on experience in Shopify, Next.js and full-stack PHP.
                 </p>
                 <p className="mt-5">
-                    Whether it’s crafting responsive interfaces or developing robust backend systems, I aim to deliver solutions that are both reliable and impactful.
+                    I turn Figma and Adobe XD designs into clean, responsive builds that load fast and stay easy to maintain, and I’ve kept portfolios of 20+ live sites stable and up to date. I communicate clearly with designers, clients and non-technical stakeholders, backed by thorough technical documentation.
                 </p>
             </div>
         </Section>

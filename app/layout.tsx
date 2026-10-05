@@ -16,8 +16,8 @@ const sortsMillGoudy = Sorts_Mill_Goudy({
 });
 
 export const metadata: Metadata = {
-    title: "Arya Beth Portfolio - Web Developer",
-    description: "Arya Beth's portfolio built by PrebuiltUI. A free and open-source UI template for React.js, Next.js and Tailwind CSS.",
+    title: "Arya Beta Widyatmika - Web Developer",
+    description: "Bali-based web developer with ten years of experience in WordPress, Shopify, Next.js and full-stack PHP.",
 };
 
 export default function RootLayout({

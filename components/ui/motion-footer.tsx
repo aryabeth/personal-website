@@ -212,11 +212,11 @@ MagneticButton.displayName = "MagneticButton";
 // -------------------------------------------------------------------------
 const MarqueeItem = () => (
   <div className="flex items-center space-x-12 px-6">
-    <span>Front End Development</span> <span className="text-primary/60">✦</span>
-    <span>Webflow</span> <span className="text-secondary/60">✦</span>
+    <span>WordPress</span> <span className="text-primary/60">✦</span>
+    <span>Shopify</span> <span className="text-secondary/60">✦</span>
     <span>Web Developer</span> <span className="text-primary/60">✦</span>
     <span>Open To Work</span> <span className="text-secondary/60">✦</span>
-    <span>Based In Indonesia</span> <span className="text-primary/60">✦</span>
+    <span>Based In Bali</span> <span className="text-primary/60">✦</span>
   </div>
 );
 
@@ -326,7 +326,7 @@ export function CinematicFooter() {
             <div ref={linksRef} className="flex flex-col items-center gap-6 w-full">
               {/* App Store Links (Primary) */}
               <div className="flex flex-wrap justify-center gap-4 w-full">
-                <MagneticButton as="a" href="mailto:aryabeta@kesato.com" className="footer-glass-pill px-10 py-5 rounded-full text-foreground font-bold text-sm md:text-base flex items-center gap-3 group">
+                <MagneticButton as="a" href="mailto:aryabwidyatmika@gmail.com" className="footer-glass-pill px-10 py-5 rounded-full text-foreground font-bold text-sm md:text-base flex items-center gap-3 group">
                   <Mail className="w-6 h-6 text-muted-foreground group-hover:text-foreground transition-colors" />
                   Email Me
                 </MagneticButton>
@@ -339,11 +339,11 @@ export function CinematicFooter() {
 
               {/* Secondary Text Links */}
               <div className="flex flex-wrap justify-center gap-3 md:gap-6 w-full mt-2">
-                <MagneticButton as="a" href="#" className="footer-glass-pill px-6 py-3 rounded-full text-muted-foreground font-medium text-xs md:text-sm hover:text-foreground flex items-center gap-2">
+                <MagneticButton as="a" href="https://github.com/aryabeth" target="_blank" className="footer-glass-pill px-6 py-3 rounded-full text-muted-foreground font-medium text-xs md:text-sm hover:text-foreground flex items-center gap-2">
                   <Github className="w-4 h-4" />
                   GitHub
                 </MagneticButton>
-                <MagneticButton as="a" href="#" className="footer-glass-pill px-6 py-3 rounded-full text-muted-foreground font-medium text-xs md:text-sm hover:text-foreground">
+                <MagneticButton as="a" href="/resume.pdf" target="_blank" className="footer-glass-pill px-6 py-3 rounded-full text-muted-foreground font-medium text-xs md:text-sm hover:text-foreground">
                   Resume
                 </MagneticButton>
                 <MagneticButton as="a" href="#contact" className="footer-glass-pill px-6 py-3 rounded-full text-muted-foreground font-medium text-xs md:text-sm hover:text-foreground">
