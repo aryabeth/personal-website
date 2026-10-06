@@ -9,11 +9,12 @@ export default function ContactSection() {
     ];
 
     return (
-        <Section title="Contact">
+        <Section title="Contact" className="pb-8 contact-cascade">
             <table className="table-auto mr-auto">
                 <tbody>
-                    {contacts.map((contact) => (
-                        <tr key={contact.label}>
+                    {contacts.map((contact, index) => (
+                        // --i orders the rows in the scroll-in cascade (the title is 0).
+                        <tr key={contact.label} style={{ "--i": index + 1 } as React.CSSProperties}>
                             <td className="pr-4 py-2">{contact.label}:</td>
                             <td className="py-2 text-gray-500 dark:text-gray-400">
                                 {contact.href ? (

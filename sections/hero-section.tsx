@@ -57,13 +57,13 @@ export default function HeroSection() {
                 ))}
             </ul>
             <div className="flex items-center gap-4 mt-6">
-                <ShinyButton href="/resume.pdf" target="_blank" size="md" className="group" accentColor="#4f46e5" accentSoftColor="#818cf8">
+                <ShinyButton href="/resume.pdf" target="_blank" size="lg" className="group" accentColor="#4f46e5" accentSoftColor="#818cf8" fillColor="#ffffff" labelColor="#030712" insetColor="#e5e7eb" darkFillColor="#000000" darkLabelColor="#ffffff" darkInsetColor="#1a1818">
                     Resume
                     <ArrowRightIcon className="group-hover:translate-x-0.5 transition ml-1 size-5" />
                 </ShinyButton>
-                <a href="http://wa.me/6283114285234" target="_blank" className="border border-gray-400 hover:bg-gray-100/70 px-7 py-2.5 rounded-full dark:border-gray-600 dark:hover:bg-gray-800/70">
+                <ShinyButton href="http://wa.me/6283114285234" target="_blank" size="lg" accentColor="#4f46e5" accentSoftColor="#818cf8" fillColor="#ffffff" labelColor="#030712" insetColor="#e5e7eb" darkFillColor="#000000" darkLabelColor="#ffffff" darkInsetColor="#1a1818" className="group">
                     Connect me
-                </a>
+                </ShinyButton>
             </div>
             <div className="space-x-6 mt-10">
                 <a href="https://www.linkedin.com/in/aryabeth" target="_blank" className="inline-flex hover:-translate-y-0.5 transition">

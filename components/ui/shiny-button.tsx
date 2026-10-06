@@ -45,6 +45,11 @@ interface ShinyButtonProps {
     size?: keyof typeof SIZES;
     fillColor?: string;
     labelColor?: string;
+    insetColor?: string;
+    /** Fill, label and inner-edge colours used when <html> has the `dark` class. */
+    darkFillColor?: string;
+    darkLabelColor?: string;
+    darkInsetColor?: string;
     accentColor?: string;
     accentSoftColor?: string;
     sweepDuration?: number;
@@ -66,6 +71,10 @@ export function ShinyButton({
     size = "lg",
     fillColor = "#000000",
     labelColor = "#ffffff",
+    insetColor = "#1a1818",
+    darkFillColor,
+    darkLabelColor,
+    darkInsetColor,
     accentColor = "#ff5f00",
     accentSoftColor = "#ff9253",
     sweepDuration = 3,
@@ -104,7 +113,7 @@ export function ShinyButton({
 
     .${scope} {
       --gleam-base: ${fillColor};
-      --gleam-inset: #1a1818;
+      --gleam-inset: ${insetColor};
       --gleam-label: ${labelColor};
       --gleam-accent: ${accentColor};
       --gleam-accent-soft: ${accentSoftColor};
@@ -143,6 +152,12 @@ export function ShinyButton({
         --gradient-angle-offset-${instanceId},
         --gradient-percent-${instanceId},
         --gradient-shine-${instanceId};
+    }
+
+    .dark .${scope} {
+      ${darkFillColor ? `--gleam-base: ${darkFillColor};` : ""}
+      ${darkLabelColor ? `--gleam-label: ${darkLabelColor};` : ""}
+      ${darkInsetColor ? `--gleam-inset: ${darkInsetColor};` : ""}
     }
 
     .${scope}::before,

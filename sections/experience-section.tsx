@@ -1,4 +1,5 @@
 import Section from "@/components/section";
+import { TiltCard } from "@/components/ui/be-ui-tilt-card";
 import { BriefcaseIcon } from "lucide-react";
 
 export default function ExperienceSection() {
@@ -44,28 +45,26 @@ export default function ExperienceSection() {
     return (
         <Section title="Experience">
             <div className="space-y-6 w-full">
-                {experience.map((experience) => (
-                    <div key={experience.title} className="w-full border border-gray-200 p-6 rounded-xl dark:border-gray-800">
+                {experience.map((item) => (
+                    <TiltCard key={`${item.company}-${item.start}`} max={6} className="w-full border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900/60">
                         <div className="flex flex-col md:flex-row items-start gap-3 md:items-center justify-between w-full text-gray-500 dark:text-gray-400">
                             <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
-                                <div className="bg-gray-50 border border-gray-200 rounded-lg p-3 dark:bg-gray-900 dark:border-gray-800">
+                                <div className="bg-gray-50 border border-gray-200 rounded-lg p-3 dark:bg-gray-800 dark:border-gray-700">
                                     <BriefcaseIcon className="size-5.5 text-gray-600 dark:text-gray-300" />
                                 </div>
                                 <div>
-                                    <h3 className="text-base font-medium text-gray-800 dark:text-gray-100">
-                                        {experience.title}
-                                    </h3>
-                                    <div>{experience.company} · {experience.location}</div>
+                                    <h3 className="text-base font-medium text-gray-800 dark:text-gray-100">{item.title}</h3>
+                                    <div>{item.company} · {item.location}</div>
                                 </div>
                             </div>
-                            <div className="shrink-0">{experience.start} - {experience.end}</div>
+                            <div className="shrink-0">{item.start} – {item.end}</div>
                         </div>
                         <ul className="list-disc px-5 mt-6 text-gray-500 space-y-2 dark:text-gray-400">
-                            {experience.description.map((description) => (
-                                <li key={description}>{description}</li>
+                            {item.description.map((line) => (
+                                <li key={line}>{line}</li>
                             ))}
                         </ul>
-                    </div>
+                    </TiltCard>
                 ))}
             </div>
         </Section>

@@ -1,6 +1,6 @@
 import Section from "@/components/section";
+import { TiltCard } from "@/components/ui/be-ui-tilt-card";
 import { ArrowUpRightIcon } from "lucide-react";
-import Image from "next/image";
 
 interface Project {
     title: string;
@@ -59,62 +59,50 @@ export default function ProjectsSection() {
 
     return (
         <Section title="Projects">
-            <div className="grid sm:grid-cols-2 gap-4 w-full">
+            <div className="space-y-6 w-full">
                 {projects.map((project) => (
-                    <div key={project.title} className="flex flex-col hover:-translate-y-0.5 transition duration-300 border border-gray-200 rounded-xl overflow-hidden dark:border-gray-800">
-                        {project.image && (
-                            <Image
-                                className="w-full aspect-video object-cover border-b border-gray-200 dark:border-gray-800"
-                                src={project.image}
-                                alt={`${project.title} website`}
-                                width={640}
-                                height={360}
-                            />
-                        )}
-                        <div className="flex flex-col flex-1 p-5">
-                            <div className="flex items-start justify-between gap-3">
-                                <h3 className="text-base font-medium">
-                                    {project.title}
-                                </h3>
-                                <span className="shrink-0 text-gray-500 pt-0.5 dark:text-gray-400">{project.year}</span>
-                            </div>
-                            <ul className="flex flex-wrap gap-1.5 mt-2">
-                                {project.stack.map((tech) => (
-                                    <li key={tech} className="border border-gray-200 text-gray-600 text-xs rounded-full px-2.5 py-0.5 dark:border-gray-700 dark:text-gray-300">
-                                        {tech}
-                                    </li>
-                                ))}
-                            </ul>
-                            {project.agency && (
-                                <p className="mt-3 text-gray-500 dark:text-gray-400">
-                                    Built at <span className="font-medium text-gray-800 dark:text-gray-100">{project.agency}</span>
-                                </p>
-                            )}
-                            <dl className="mt-3 space-y-1.5 text-gray-500 dark:text-gray-400">
-                                <div>
-                                    <dt className="inline font-medium text-gray-800 dark:text-gray-100">My role: </dt>
-                                    <dd className="inline">{project.role}</dd>
-                                </div>
-                                {project.team && (
-                                    <div>
-                                        <dt className="inline font-medium text-gray-800 dark:text-gray-100">Team: </dt>
-                                        <dd className="inline">{project.team}</dd>
-                                    </div>
-                                )}
-                            </dl>
-                            {project.url && (
-                                <a
-                                    href={project.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="group inline-flex items-center gap-1 mt-auto pt-4 font-medium text-indigo-600 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300"
-                                >
-                                    View live site
-                                    <ArrowUpRightIcon className="size-4 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-                                </a>
-                            )}
+                    <TiltCard key={project.title} max={6} className="w-full border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900/60">
+                        <div className="flex items-start justify-between gap-3">
+                            <h3 className="text-base font-medium text-gray-800 dark:text-gray-100">{project.title}</h3>
+                            <span className="shrink-0 text-gray-500 dark:text-gray-400">{project.year}</span>
                         </div>
-                    </div>
+                        <ul className="flex flex-wrap gap-1.5 mt-3">
+                            {project.stack.map((tech) => (
+                                <li key={tech} className="border border-gray-200 text-gray-600 text-xs rounded-full px-2.5 py-0.5 dark:border-gray-700 dark:text-gray-300">
+                                    {tech}
+                                </li>
+                            ))}
+                        </ul>
+                        <dl className="mt-4 space-y-1.5 text-gray-500 dark:text-gray-400">
+                            {project.agency && (
+                                <div>
+                                    <dt className="inline font-medium text-gray-800 dark:text-gray-100">Built at: </dt>
+                                    <dd className="inline">{project.agency}</dd>
+                                </div>
+                            )}
+                            <div>
+                                <dt className="inline font-medium text-gray-800 dark:text-gray-100">My role: </dt>
+                                <dd className="inline">{project.role}</dd>
+                            </div>
+                            {project.team && (
+                                <div>
+                                    <dt className="inline font-medium text-gray-800 dark:text-gray-100">Team: </dt>
+                                    <dd className="inline">{project.team}</dd>
+                                </div>
+                            )}
+                        </dl>
+                        {project.url && (
+                            <a
+                                href={project.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group inline-flex items-center gap-1 mt-4 font-medium text-indigo-600 hover:text-indigo-700 dark:text-indigo-400 dark:hover:text-indigo-300"
+                            >
+                                View live site
+                                <ArrowUpRightIcon className="size-4 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                            </a>
+                        )}
+                    </TiltCard>
                 ))}
             </div>
         </Section>

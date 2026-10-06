@@ -23,3 +23,6 @@ yarn-error.log*
 
 # empty nested repo
 personal-website/
+
+# impeccable engine binary (downloaded automatically on first run)
+.claude/skills/impeccable/scripts/bin/

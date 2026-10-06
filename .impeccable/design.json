@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T00:00:00Z",
+  "title": "Design System: Aryabeth",
+  "extensions": {
+    "colorMeta": {
+      "background": { "role": "neutral", "displayName": "Paper", "canonical": "oklch(1 0 0)", "tonalRamp": ["oklch(0.15 0 0)", "oklch(0.27 0 0)", "oklch(0.39 0 0)", "oklch(0.51 0 0)", "oklch(0.63 0 0)", "oklch(0.75 0 0)", "oklch(0.87 0 0)", "oklch(0.97 0 0)"] },
+      "background-dark": { "role": "neutral", "displayName": "Night (gray-950)", "canonical": "oklch(0.13 0.028 261.692)", "tonalRamp": ["oklch(0.13 0.028 261.692)", "oklch(0.21 0.034 264.665)", "oklch(0.278 0.033 256.848)", "oklch(0.373 0.034 259.733)", "oklch(0.551 0.027 264.364)", "oklch(0.707 0.022 261.325)", "oklch(0.872 0.01 258.338)", "oklch(0.967 0.003 264.542)"] },
+      "foreground": { "role": "neutral", "displayName": "Token Foreground", "canonical": "oklch(0.145 0 0)", "tonalRamp": ["oklch(0.145 0 0)", "oklch(0.27 0 0)", "oklch(0.39 0 0)", "oklch(0.51 0 0)", "oklch(0.63 0 0)", "oklch(0.75 0 0)", "oklch(0.87 0 0)", "oklch(0.95 0 0)"] },
+      "primary": { "role": "neutral", "displayName": "Token Primary (near-black)", "canonical": "oklch(0.205 0 0)", "tonalRamp": ["oklch(0.15 0 0)", "oklch(0.205 0 0)", "oklch(0.35 0 0)", "oklch(0.5 0 0)", "oklch(0.63 0 0)", "oklch(0.75 0 0)", "oklch(0.87 0 0)", "oklch(0.95 0 0)"] },
+      "secondary": { "role": "neutral", "displayName": "Token Secondary", "canonical": "oklch(0.97 0 0)", "tonalRamp": ["oklch(0.15 0 0)", "oklch(0.269 0 0)", "oklch(0.39 0 0)", "oklch(0.51 0 0)", "oklch(0.63 0 0)", "oklch(0.75 0 0)", "oklch(0.87 0 0)", "oklch(0.97 0 0)"] },
+      "muted-foreground": { "role": "neutral", "displayName": "Token Muted Text", "canonical": "oklch(0.556 0 0)", "tonalRamp": ["oklch(0.15 0 0)", "oklch(0.27 0 0)", "oklch(0.39 0 0)", "oklch(0.556 0 0)", "oklch(0.63 0 0)", "oklch(0.708 0 0)", "oklch(0.87 0 0)", "oklch(0.95 0 0)"] },
+      "destructive": { "role": "tertiary", "displayName": "Footer Heart Red", "canonical": "oklch(0.577 0.245 27.325)", "tonalRamp": ["oklch(0.15 0.06 27.325)", "oklch(0.27 0.11 27.325)", "oklch(0.39 0.16 27.325)", "oklch(0.51 0.21 27.325)", "oklch(0.577 0.245 27.325)", "oklch(0.704 0.191 22.216)", "oklch(0.85 0.09 27.325)", "oklch(0.95 0.03 27.325)"] },
+      "border": { "role": "neutral", "displayName": "Token Border", "canonical": "oklch(0.922 0 0)", "tonalRamp": ["oklch(0.15 0 0)", "oklch(0.27 0 0)", "oklch(0.39 0 0)", "oklch(0.51 0 0)", "oklch(0.63 0 0)", "oklch(0.75 0 0)", "oklch(0.87 0 0)", "oklch(0.922 0 0)"] },
+      "ink": { "role": "neutral", "displayName": "Body Graphite (gray-800)", "canonical": "oklch(0.278 0.033 256.848)", "tonalRamp": ["oklch(0.13 0.028 261.692)", "oklch(0.21 0.034 264.665)", "oklch(0.278 0.033 256.848)", "oklch(0.373 0.034 259.733)", "oklch(0.551 0.027 264.364)", "oklch(0.707 0.022 261.325)", "oklch(0.872 0.01 258.338)", "oklch(0.967 0.003 264.542)"] },
+      "slate-muted": { "role": "neutral", "displayName": "Slate Muted (gray-500)", "canonical": "oklch(0.551 0.027 264.364)", "tonalRamp": ["oklch(0.13 0.028 261.692)", "oklch(0.21 0.034 264.665)", "oklch(0.278 0.033 256.848)", "oklch(0.373 0.034 259.733)", "oklch(0.551 0.027 264.364)", "oklch(0.707 0.022 261.325)", "oklch(0.872 0.01 258.338)", "oklch(0.967 0.003 264.542)"] },
+      "chip-ink": { "role": "neutral", "displayName": "Chip Graphite (gray-600)", "canonical": "oklch(0.446 0.03 256.802)" },
+      "hairline": { "role": "neutral", "displayName": "Hairline (gray-200)", "canonical": "oklch(0.928 0.006 264.531)" },
+      "hairline-strong": { "role": "neutral", "displayName": "Hairline Strong (gray-300)", "canonical": "oklch(0.872 0.01 258.338)" },
+      "outline-stroke": { "role": "neutral", "displayName": "Outline Stroke (gray-400)", "canonical": "oklch(0.707 0.022 261.325)" },
+      "tile-fill": { "role": "neutral", "displayName": "Tile Fill (gray-50)", "canonical": "oklch(0.985 0.002 247.839)" },
+      "grid-line": { "role": "neutral", "displayName": "Grid Line (slate-200)", "canonical": "oklch(0.929 0.013 255.508)" },
+      "indigo-link": { "role": "primary", "displayName": "Gleam Indigo (indigo-600)", "canonical": "oklch(0.511 0.262 276.966)", "tonalRamp": ["oklch(0.257 0.09 281.288)", "oklch(0.359 0.144 278.697)", "oklch(0.457 0.24 277.023)", "oklch(0.511 0.262 276.966)", "oklch(0.585 0.233 277.117)", "oklch(0.673 0.182 276.935)", "oklch(0.785 0.115 274.713)", "oklch(0.93 0.034 272.788)"] },
+      "indigo-focus": { "role": "primary", "displayName": "Focus Indigo (indigo-500)", "canonical": "#6366f1" },
+      "shiny-fill": { "role": "primary", "displayName": "Resume Black", "canonical": "#000000" },
+      "shiny-accent": { "role": "primary", "displayName": "Gleam Arc", "canonical": "#4f46e5" },
+      "shiny-accent-soft": { "role": "primary", "displayName": "Gleam Arc Soft", "canonical": "#818cf8" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero name only (md: display-md)." },
+      "role-serif": { "displayName": "Role Serif", "purpose": "Sorts Mill Goudy, the 'Web Developer' line under the hero name only. Exposed as font-mono." },
+      "section-title": { "displayName": "Section Title", "purpose": "Left-column label of every Section; shrinks to 1.125rem from md." },
+      "title": { "displayName": "Title", "purpose": "Card headings." },
+      "body": { "displayName": "Body", "purpose": "Base 14px size set on body." },
+      "body-prose": { "displayName": "Body Prose", "purpose": "About paragraphs, 1.625rem leading." },
+      "label": { "displayName": "Label", "purpose": "Stack chips (12px); skill chips and mobile nav use 13px." },
+      "footer-display": { "displayName": "Footer Display", "purpose": "Plus Jakarta Sans 900 footer heading only; divergent from the page." }
+    },
+    "shadows": [
+      { "name": "footer-glass-pill", "value": "0 10px 30px -10px var(--pill-shadow), inset 0 1px 1px var(--pill-highlight), inset 0 -1px 2px var(--pill-inset-shadow)", "purpose": "Footer link pills only." },
+      { "name": "footer-glass-pill-hover", "value": "0 20px 40px -10px var(--pill-shadow-hover), inset 0 1px 1px var(--pill-highlight-hover)", "purpose": "Footer pill hover." },
+      { "name": "theme-switch-track", "value": "0em -0.062em 0.062em rgba(0,0,0,0.25), 0em 0.062em 0.125em rgba(255,255,255,0.94)", "purpose": "Theme switch track only." },
+      { "name": "shiny-inset", "value": "inset 0 0 0 1px #1a1818", "purpose": "Inner ring of the shiny resume button." }
+    ],
+    "motion": [
+      { "name": "hover-lift", "value": "translateY(-2px), 150ms (300ms on project cards)", "purpose": "Project cards and social icons." },
+      { "name": "shiny-ease", "value": "0.8s cubic-bezier(0.25, 1, 0.5, 1)", "purpose": "Shiny button hover arc widening; 3s linear edge sweep at rest; disabled under reduced motion." },
+      { "name": "theme-switch-spring", "value": "0.5s cubic-bezier(0, -0.02, 0.4, 1.25)", "purpose": "Sun/moon slide and cloud/star movement." },
+      { "name": "theme-switch-circle", "value": "0.3s cubic-bezier(0, -0.02, 0.35, 1.17)", "purpose": "Sun/moon circle hover nudge." },
+      { "name": "footer-pill", "value": "0.4s cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Footer glass pill hover." },
+      { "name": "footer-marquee", "value": "40s linear infinite", "purpose": "Footer marquee band; no reduced-motion handling." },
+      { "name": "footer-magnetic", "value": "GSAP power2.out 0.4s in, elastic.out(1, 0.3) 1.2s out", "purpose": "Magnetic hover on footer pills." },
+      { "name": "smooth-scroll", "value": "Lenis", "purpose": "Page-wide smooth scrolling." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Shiny Resume Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Black pill CTA with an animated indigo conic border; hero only.",
+      "html": "<a class=\"ds-btn-shiny\" href=\"#\"><span>Resume <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></span></a>",
+      "css": ".ds-btn-shiny { display: inline-flex; align-items: center; padding: 0.625rem 1.75rem; font-family: Poppins, sans-serif; font-size: 0.875rem; line-height: 1.2; font-weight: 500; color: #ffffff; text-decoration: none; border: 1px solid transparent; border-radius: 32px; background: linear-gradient(#000000, #000000) padding-box, conic-gradient(from 0deg, transparent, #4f46e5 5%, #ffffff 10%, #4f46e5 15%, transparent 20%) border-box; box-shadow: inset 0 0 0 1px #1a1818; transition: background 0.8s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.8s cubic-bezier(0.25, 1, 0.5, 1); } .ds-btn-shiny span { display: inline-flex; align-items: center; gap: 0.25rem; } .ds-btn-shiny svg { transition: transform 150ms; } .ds-btn-shiny:hover, .ds-btn-shiny:focus-visible { background: linear-gradient(#000000, #000000) padding-box, conic-gradient(from 95deg, transparent, #4f46e5 20%, #818cf8 40%, #4f46e5 60%, transparent 80%) border-box; box-shadow: inset 0 0 0 1px #1a1818, inset 0 -0.5em 2rem 4px rgba(79, 70, 229, 0.5); } .ds-btn-shiny:hover svg { transform: translateX(2px); } .ds-btn-shiny:focus-visible { outline: 2px solid #6366f1; outline-offset: 4px; } .ds-btn-shiny:active { transform: translateY(1px); }"
+    },
+    {
+      "name": "Outline Pill Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Quiet secondary pill beside the resume button.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#\">Connect me</a>",
+      "css": ".ds-btn-outline { display: inline-block; padding: 0.625rem 1.75rem; font-family: Poppins, sans-serif; font-size: 0.875rem; color: oklch(0.278 0.033 256.848); text-decoration: none; border: 1px solid oklch(0.707 0.022 261.325); border-radius: 9999px; background: transparent; transition: background-color 150ms; } .ds-btn-outline:hover { background: color-mix(in oklch, oklch(0.967 0.003 264.542) 70%, transparent); } .ds-btn-outline:focus-visible { outline: 2px solid #6366f1; outline-offset: 2px; }"
+    },
+    {
+      "name": "Site Header",
+      "kind": "nav",
+      "refersTo": "nav-header",
+      "description": "Fixed translucent header with wordmark and muted anchor links.",
+      "html": "<header class=\"ds-nav\"><nav class=\"ds-nav-inner\"><a class=\"ds-nav-mark\" href=\"#\">Aryabeth</a><ul class=\"ds-nav-links\"><li><a href=\"#\">About</a></li><li><a href=\"#\">Projects</a></li><li><a href=\"#\">Experience</a></li><li><a href=\"#\">Contact</a></li></ul></nav></header>",
+      "css": ".ds-nav { border-bottom: 1px solid color-mix(in oklch, oklch(0.928 0.006 264.531) 70%, transparent); background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); font-family: Poppins, sans-serif; } .ds-nav-inner { display: flex; align-items: center; justify-content: space-between; max-width: 56rem; margin: 0 auto; padding: 0 1rem; height: 3.5rem; } .ds-nav-mark { font-weight: 600; text-transform: uppercase; font-size: 1rem; color: oklch(0.278 0.033 256.848); text-decoration: none; } .ds-nav-links { display: flex; gap: 1.75rem; list-style: none; margin: 0; padding: 0; font-size: 0.875rem; } .ds-nav-links a { color: oklch(0.551 0.027 264.364); text-decoration: none; transition: color 150ms; } .ds-nav-links a:hover { color: oklch(0.278 0.033 256.848); } .ds-nav-links a:focus-visible { outline: 2px solid #6366f1; outline-offset: 2px; }"
+    },
+    {
+      "name": "Stack Chip",
+      "kind": "chip",
+      "refersTo": "chip-stack",
+      "description": "Small hairline pill listing a project's technologies.",
+      "html": "<ul class=\"ds-chips\"><li class=\"ds-chip-stack\">CodeIgniter</li><li class=\"ds-chip-stack\">PHP</li><li class=\"ds-chip-stack\">MySQL</li></ul>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: 0.375rem; list-style: none; margin: 0; padding: 0; } .ds-chip-stack { font-family: Poppins, sans-serif; font-size: 0.75rem; line-height: 1rem; color: oklch(0.446 0.03 256.802); border: 1px solid oklch(0.928 0.006 264.531); border-radius: 9999px; padding: 0.125rem 0.625rem; }"
+    },
+    {
+      "name": "Skill Chip",
+      "kind": "chip",
+      "refersTo": "chip-skill",
+      "description": "Larger pill in the skills cloud with a gray hover wash.",
+      "html": "<p class=\"ds-chip-skill\">WordPress</p>",
+      "css": ".ds-chip-skill { display: inline-block; margin: 0; font-family: Poppins, sans-serif; font-size: 13px; color: oklch(0.446 0.03 256.802); border: 1px solid oklch(0.872 0.01 258.338); border-radius: 9999px; padding: 0.375rem 1.25rem; cursor: default; transition: background-color 150ms; } .ds-chip-skill:hover { background: color-mix(in oklch, oklch(0.967 0.003 264.542) 70%, transparent); }"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "card-project",
+      "description": "Hairline card with title, year, stack chips, role credit and live-site link; lifts 2px on hover.",
+      "html": "<div class=\"ds-card-project\"><div class=\"ds-card-body\"><div class=\"ds-card-head\"><h3>Futsal Court Booking</h3><span>2015 – 2016</span></div><ul class=\"ds-card-chips\"><li>PHP</li><li>MySQL</li></ul><dl class=\"ds-card-dl\"><div><dt>My role: </dt><dd>Full-stack developer</dd></div></dl><a class=\"ds-card-link\" href=\"#\">View live site <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></a></div></div>",
+      "css": ".ds-card-project { display: flex; flex-direction: column; max-width: 22rem; border: 1px solid oklch(0.928 0.006 264.531); border-radius: 0.75rem; overflow: hidden; font-family: Poppins, sans-serif; font-size: 0.875rem; color: oklch(0.278 0.033 256.848); transition: transform 300ms; } .ds-card-project:hover { transform: translateY(-2px); } .ds-card-body { display: flex; flex-direction: column; padding: 1.25rem; } .ds-card-head { display: flex; justify-content: space-between; gap: 0.75rem; align-items: flex-start; } .ds-card-head h3 { margin: 0; font-size: 1rem; font-weight: 500; } .ds-card-head span { color: oklch(0.551 0.027 264.364); padding-top: 0.125rem; flex-shrink: 0; } .ds-card-chips { display: flex; flex-wrap: wrap; gap: 0.375rem; list-style: none; margin: 0.5rem 0 0; padding: 0; } .ds-card-chips li { font-size: 0.75rem; color: oklch(0.446 0.03 256.802); border: 1px solid oklch(0.928 0.006 264.531); border-radius: 9999px; padding: 0.125rem 0.625rem; } .ds-card-dl { margin: 0.75rem 0 0; color: oklch(0.551 0.027 264.364); } .ds-card-dl dt { display: inline; font-weight: 500; color: oklch(0.278 0.033 256.848); } .ds-card-dl dd { display: inline; margin: 0; } .ds-card-link { display: inline-flex; align-items: center; gap: 0.25rem; padding-top: 1rem; font-weight: 500; color: oklch(0.511 0.262 276.966); text-decoration: none; } .ds-card-link svg { transition: transform 150ms; } .ds-card-link:hover { color: oklch(0.457 0.24 277.023); } .ds-card-link:hover svg { transform: translate(2px, -2px); } .ds-card-link:focus-visible { outline: 2px solid #6366f1; outline-offset: 2px; }"
+    },
+    {
+      "name": "Experience Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Full-width hairline card with icon tile, title, muted meta, dates and bullet list.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-card-row\"><div class=\"ds-card-id\"><div class=\"ds-icon-tile\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16\"/><rect width=\"20\" height=\"14\" x=\"2\" y=\"6\" rx=\"2\"/></svg></div><div><h3>Web Developer</h3><div>Kesato &amp; Co Digital Agency · Bali</div></div></div><div>2020 - Present</div></div><ul class=\"ds-card-list\"><li>Build and launch client websites.</li><li>Maintain and optimise live client sites.</li></ul></div>",
+      "css": ".ds-card { border: 1px solid oklch(0.928 0.006 264.531); border-radius: 0.75rem; padding: 1.5rem; font-family: Poppins, sans-serif; font-size: 0.875rem; color: oklch(0.551 0.027 264.364); } .ds-card-row { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; } .ds-card-id { display: flex; align-items: center; gap: 0.75rem; } .ds-card-id h3 { margin: 0; font-size: 1rem; font-weight: 500; color: oklch(0.278 0.033 256.848); } .ds-icon-tile { display: flex; background: oklch(0.985 0.002 247.839); border: 1px solid oklch(0.928 0.006 264.531); border-radius: 0.5rem; padding: 0.75rem; color: oklch(0.446 0.03 256.802); } .ds-card-list { list-style: disc; margin: 1.5rem 0 0; padding: 0 1.25rem; display: grid; gap: 0.5rem; }"
+    },
+    {
+      "name": "Footer Glass Pill",
+      "kind": "custom",
+      "description": "Third-party cinematic footer link pill; blurred glass with layered shadows. Footer only, divergent from the main column.",
+      "html": "<a class=\"ds-footer-pill\" href=\"#\">Email Me</a>",
+      "css": ".ds-footer-pill { display: inline-flex; align-items: center; gap: 0.75rem; padding: 1.25rem 2.5rem; border-radius: 9999px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 700; font-size: 0.875rem; color: var(--foreground, oklch(0.145 0 0)); text-decoration: none; background: linear-gradient(145deg, color-mix(in oklch, oklch(0.145 0 0) 3%, transparent) 0%, color-mix(in oklch, oklch(0.145 0 0) 1%, transparent) 100%); border: 1px solid color-mix(in oklch, oklch(0.145 0 0) 8%, transparent); box-shadow: 0 10px 30px -10px color-mix(in oklch, oklch(1 0 0) 50%, transparent), inset 0 1px 1px color-mix(in oklch, oklch(0.145 0 0) 10%, transparent), inset 0 -1px 2px color-mix(in oklch, oklch(1 0 0) 80%, transparent); backdrop-filter: blur(16px); transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); } .ds-footer-pill:hover { background: linear-gradient(145deg, color-mix(in oklch, oklch(0.145 0 0) 8%, transparent) 0%, color-mix(in oklch, oklch(0.145 0 0) 2%, transparent) 100%); border-color: color-mix(in oklch, oklch(0.145 0 0) 20%, transparent); box-shadow: 0 20px 40px -10px color-mix(in oklch, oklch(1 0 0) 70%, transparent), inset 0 1px 1px color-mix(in oklch, oklch(0.145 0 0) 20%, transparent); } .ds-footer-pill:focus-visible { outline: 2px solid #6366f1; outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Resume Sheet",
+    "overview": "The main column reads like a well-set CV on white paper: one centred 56rem column, a left-hand section label beside each block of content, hairline-bordered cards, and gray ink that steps between three tones. Almost everything is Poppins at small sizes (14px body), with one line of Sorts Mill Goudy serif under the name as the only typographic flourish. Colour is nearly absent; indigo appears in three places only (the resume button's sweeping edge, the \"View live site\" link, the theme switch focus ring).\n\nThree elements break that quiet on purpose or by inheritance. The hero sits on a faded square-grid SVG that dissolves into the background through a radial mask. The resume button is a black pill with an animated conic \"gleam\" border. The theme switch is a skeuomorphic sun/moon toggle with clouds and stars. Below the contact table, the page then hands off to a third-party \"cinematic footer\" that runs a separate visual language: Plus Jakarta Sans at weight 900, a rotated marquee, an aurora glow, a 60px line grid, glass pills with blur and multi-layer shadows, magnetic GSAP hover, and a giant outlined wordmark. That footer is recorded here as it ships; it is not consistent with the rest of the page.\n\nLight and dark themes are both first-class, switched by a `dark` class on `<html>` set before paint. Dark mode is a deep blue-black (the same value as Tailwind gray-950), not neutral black.",
+    "keyCharacteristics": [
+      "Single 56rem centred column; section label left, content right from md up.",
+      "Flat main column: 1px hairline borders, 12px card corners, no shadows.",
+      "Pills everywhere something is clickable or a tag: buttons, chips, footer links.",
+      "Gray ink in three steps (strong / body / muted); indigo used sparingly.",
+      "Poppins for nearly everything; one serif line; a third face only in the footer.",
+      "Light and dark themes, both driven mostly by hardcoded Tailwind gray utilities."
+    ],
+    "rules": [
+      { "name": "The Three-Grays Rule", "body": "Text uses three steps: strong (`ink`, card titles and labels in `dt`), body, and muted (`slate-muted`). New text picks one of these three rather than a new gray.", "section": "colors" },
+      { "name": "The Scarce Indigo Rule", "body": "Indigo appears only on the primary CTA's gleam, outbound live-site links, and focus rings. It never fills a surface in the main column.", "section": "colors" },
+      { "name": "The One Serif Line Rule", "body": "Sorts Mill Goudy appears once, on the hero role line. It is not used for headings or body.", "section": "typography" },
+      { "name": "The Flat Column Rule", "body": "Inside the 56rem column, surfaces separate by hairline and spacing, never by shadow. Hover feedback is a 2px lift or a 70%-opacity gray wash.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep new main-column content inside the `Section` wrapper: 56rem column, 7rem top margin, 10.5rem title column from md.",
+      "Do build containers as transparent cards with a 1px hairline border, 12px corners and 1.25 to 1.5rem padding.",
+      "Do make buttons and tags full pills; pair a strong option with the outline pill (1px `outline-stroke`, 0.625rem by 1.75rem).",
+      "Do stay inside the Three-Grays text scale and set both light and dark values for every colour.",
+      "Do keep indigo to the CTA gleam, outbound links and focus rings.",
+      "Do use 2px upward lifts or 70% gray washes for hover feedback in the main column."
+    ],
+    "donts": [
+      "Don't add box-shadows to cards or buttons inside the main column; it is flat by construction.",
+      "Don't use Sorts Mill Goudy for anything beyond the hero role line, and don't treat `font-mono` as a monospace face; it is the serif.",
+      "Don't carry Plus Jakarta Sans, glass pills, aurora glows or magnetic hover into the main column; they belong to the footer as shipped.",
+      "Don't fill surfaces with indigo or introduce a second accent hue."
+    ]
+  }
+}

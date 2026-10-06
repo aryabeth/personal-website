@@ -109,7 +109,8 @@ const STYLES = `
 
 /* Giant Background Text Masking */
 .footer-giant-bg-text {
-  font-size: 15vw;
+  font-size: 17vw;
+  bottom: 1vh;
   line-height: 0.75;
   font-weight: 900;
   letter-spacing: -0.05em;
@@ -301,7 +302,7 @@ export function CinematicFooter() {
           {/* Giant background text */}
           <div
             ref={giantTextRef}
-            className="footer-giant-bg-text absolute -bottom-[5vh] left-1/2 -translate-x-1/2 whitespace-nowrap z-0 pointer-events-none select-none"
+            className="footer-giant-bg-text absolute left-1/2 -translate-x-1/2 whitespace-nowrap z-0 pointer-events-none select-none"
           >
             A R Y A B E T H
           </div>
