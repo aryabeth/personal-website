@@ -15,9 +15,9 @@ export default function Page() {
             <main className="max-md:px-4">
                 <HeroSection />
                 <AboutSection />
-                <ProjectsSection />
                 <ExperienceSection />
                 <EducationSection />
+                <ProjectsSection />
                 <SkillsSection />
                 <ContactSection />
             </main>
