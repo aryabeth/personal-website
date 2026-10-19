@@ -11,7 +11,7 @@ export default function ExperienceSection() {
             start: "2020",
             end: "Present",
             description: [
-                "Build and launch client websites using WordPress, Shopify and Next.js.",
+                "Build and launch client websites using WordPress, Shopify, Webflow and Next.js.",
                 "Convert Figma and Adobe XD designs into pixel-accurate, responsive front-ends.",
                 "Maintain and optimise live client sites, improving page speed and uptime.",
             ],
